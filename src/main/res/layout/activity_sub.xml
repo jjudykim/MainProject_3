@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="사용자 계정 생성"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btn_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="mOnClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:id="@+id/FL_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ET_id"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:hint="ID"
+                android:inputType="textPersonName"
+                android:paddingStart="40dp" />
+
+            <ImageView
+                android:id="@+id/icon_id"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/img_id" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/FL_password"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3F51B5"
+            android:onClick="mOnClick"
+            android:text="CHECK" />
+
+        <FrameLayout
+            android:id="@+id/FL_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FL_id">
+
+            <EditText
+                android:id="@+id/ET_password"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:hint="암호"
+                android:inputType="textPersonName"
+                android:paddingStart="40dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/img_password" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FL_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FL_password">
+
+            <EditText
+                android:id="@+id/ET_name"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:hint="이름"
+                android:inputType="textPersonName"
+                android:paddingStart="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/img_name" />
+
+        </FrameLayout>
+
+        <Spinner
+            android:id="@+id/sub_spinner"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FL_name" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="mOnClick"
+        android:text="가입" />
+
+</LinearLayout>

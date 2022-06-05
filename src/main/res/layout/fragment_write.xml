@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/write_cancelBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#3F51B5"
+        android:text="취소" />
+
+    <Button
+        android:id="@+id/write_sendBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3F51B5"
+        android:text="보내기"
+        android:layout_toRightOf="@id/write_cancelBtn"/>
+
+    <TextView
+        android:id="@+id/write_senderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/write_cancelBtn"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:text="받는이"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/write_receiverET"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/write_cancelBtn"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/write_senderText"
+        android:hint="받는이를 입력하세요" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/write_cancelBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/write_receiverET"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_add_box_24" />
+
+    <EditText
+        android:id="@+id/write_titleET"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/write_senderText"
+        android:layout_marginTop="20dp"
+        android:hint="제목" />
+
+    <EditText
+        android:id="@+id/write_contentsET"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_below="@id/write_titleET"
+        android:layout_marginTop="20dp"
+        android:ems="18"
+        android:gravity="top"
+        android:hint="내용을 입력하세요"
+        android:background="@null"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

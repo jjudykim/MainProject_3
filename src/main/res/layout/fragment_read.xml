@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/read_btn_back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="뒤로" />
+
+    <Button
+        android:id="@+id/read_btn_delete"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/read_btn_back"
+        android:text="삭제" />
+
+    <Button
+        android:id="@+id/read_btn_reply"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/read_btn_delete"
+        android:text="답장" />
+
+    <TextView
+        android:id="@+id/read_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/read_btn_back"
+        android:text="보낸이"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/read_senderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/read_sender"
+        android:layout_marginStart="50dp"
+        android:layout_toRightOf="@id/read_sender"
+        android:textSize="20sp"
+        android:text="sender"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/read_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_sender"
+        android:layout_alignStart="@id/read_sender"
+        android:layout_marginTop="20dp"
+        android:text="받는이"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/read_receiver_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/read_receiver"
+        android:layout_alignStart="@id/read_senderTV"
+        android:layout_marginTop="20dp"
+        android:text="receiver"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/read_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/read_receiver"
+        android:layout_alignStart="@id/read_sender"
+        android:text="제목"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/read_titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_receiver_TV"
+        android:layout_alignStart="@id/read_senderTV"
+        android:layout_marginTop="15dp"
+        android:text="title"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/read_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/read_title"
+        android:layout_alignStart="@id/read_sender"
+        android:text="보낸일시"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/read_time_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/read_time"
+        android:layout_alignStart="@id/read_senderTV"
+        android:layout_marginTop="20dp"
+        android:text="time"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/read_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/read_time"
+        android:layout_marginTop="20dp"
+        android:background="#3F51B5" />
+
+    <TextView
+        android:id="@+id/read_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_line"
+        android:layout_alignStart="@id/read_sender"
+        android:layout_marginTop="20dp"
+        android:text="내용"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/read_contentsTV"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_alignStart="@id/read_senderTV"
+        android:layout_alignTop="@id/read_contents"
+        android:text="contents"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

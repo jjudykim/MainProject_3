@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/selectReceiver_btn_cancel"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="취소"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectReceiver_btn_cancel"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/textView_department"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="학과" />
+
+        <Spinner
+            android:id="@+id/selectReceiver_spinner_department"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/textView_department" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/selectReceiver_spinner_department"
+            android:text="검색" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

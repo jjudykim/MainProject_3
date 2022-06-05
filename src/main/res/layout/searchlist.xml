@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/searchlist_idAndName"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="id(name)" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/searchlist_idAndName"
+        android:backgroundTint="@color/red_200"
+        android:text="선택" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/searchlist_idAndName"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#999999" />
+</RelativeLayout>
