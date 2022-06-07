@@ -42,9 +42,11 @@
         android:layout_below="@id/write_cancelBtn"
         android:layout_marginTop="50dp"
         android:layout_toRightOf="@id/write_senderText"
-        android:hint="받는이를 입력하세요" />
+        android:hint="받는이를 입력하세요"
+        android:inputType="textPersonName" />
 
     <ImageButton
+        android:id="@+id/write_findUserBtn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@id/write_cancelBtn"
@@ -60,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/write_senderText"
         android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
         android:hint="제목" />
 
     <EditText
@@ -68,10 +71,10 @@
         android:layout_height="400dp"
         android:layout_below="@id/write_titleET"
         android:layout_marginTop="20dp"
+        android:background="@null"
         android:ems="18"
         android:gravity="top"
         android:hint="내용을 입력하세요"
-        android:background="@null"
         android:inputType="textMultiLine" />
 
 </RelativeLayout>
